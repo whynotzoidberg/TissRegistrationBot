@@ -3,9 +3,9 @@
 #### Settings ####
 # Semester e.g. 2016W
 semester = ARGV[0] || "2016W"
-# Course Number e.g. 015087
+# Course Number e.g. 015.087
 course = ARGV[1] || ""
-# Name e.g. e0822371 
+# TISS login name e.g. e0822371 
 name = ARGV[2] || ""
 # TISS PW
 pw = ARGV[3] || ""
@@ -20,7 +20,7 @@ abort
 end
 if name.to_s.empty? || pw.to_s.empty? || semester.to_s.empty? || course.to_s.empty?
 puts "Usage: ruby tissregbot.rb [semester] [course number] [username] [password]"
-puts "E.g. ruby tissregbot.rb 2016W 015087 e0812344 password"
+puts "E.g. ruby tissregbot.rb 2016W 015.087 e0812344 password"
 abort
 end
 link = "https://tiss.tuwien.ac.at/education/course/courseRegistration.xhtml?windowId=926&semester="+semester+"&courseNr="+course.gsub('.','')
