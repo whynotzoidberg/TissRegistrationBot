@@ -16,4 +16,4 @@ Execute it like this:
 
 *so e.g.*
 
-> ruby tissregbot.rb 2016W 015087 e0812344 password
+> ruby tissregbot.rb 2016W 015.087 e0812344 password
